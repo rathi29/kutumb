@@ -1,0 +1,240 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rathi</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css\styles.css' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Agbalumo&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Agbalumo&family=Alkatra:wght@500&display=swap" rel="stylesheet">
+    <style>
+      .container{
+        background-image: url("{%static 'family_photos/tree.jpeg'%}");
+      }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <img class="logo" src= "{%static 'family_photos\LOGO.png'%}" alt="">
+            <a href="">Family-Tree</a>
+            <a href="#">Videos</a>
+            <a href="#">Photos</a>
+            <a href="#">Contact</a>
+            <a href="#">About</a>
+        </div>
+        <span class="arrow" style="font-size:60px;cursor:pointer" onclick="openNav()">&#9776;</span>
+    </nav>
+
+    <header>
+        <h1 class="title">कुटुम्ब</h1>
+    </header>
+
+    <div class="ramkishanji">
+        <img class='ramkishanji-photo' src= "{%static 'family_photos\ramkishanji.jpg'%}" alt="">
+    </div>
+
+
+
+
+    <div class="family-photo">
+        <img class="ramkishan-11child" src= "{%static 'family_photos\ramkishanfamily.jpg'%}" alt="">
+    </div>
+
+
+
+
+
+    <div class="container">
+        <div class="card">
+          <div class="overlay" id="overlay1" onclick="off()">
+            <ul>
+                <li>Name: Badridas</li>
+                <li>DOB: 1981</li>
+                <li>Wife Name:Mohinidevi Rathi</li>
+            </ul>
+          </div>
+          <div class="overlay-content">
+            <img src= "{%static 'family_photos\badridas.jpEg'%}" alt="Card Image">
+            <h3>BADRIDAS</h3>
+          </div>
+          <button class="about" onclick="on(1)" >Know more</button>
+        </div>
+        
+        <!-- Card 2 -->
+        <div class="card">
+                <div class="overlay" id="overlay2" onclick="off()">
+                  <ul>
+                      <li>Name:</li>
+                      <li>DOB:</li>
+                      <li>Wife Name:</li>
+                  </ul>
+                </div>
+                <div class="overlay-content">
+                    <img src= "{%static 'family_photos\benilal.jpg'%}" alt="Card Image">
+                    <h3>BENILAL</h3>
+                </div>
+                <button class="about" onclick="on(2)" >Know more</button>
+        </div>
+        <!-- Card 3 -->
+        <div class="card">
+                <div class="overlay" id="overlay3" onclick="off()">
+                  <ul>
+                      <li>Name:</li>
+                      <li>DOB:</li>
+                      <li>Wife Name:</li>
+                  </ul>
+                </div>
+                <div class="overlay-content">
+                    <img src="https://via.placeholder.com/150" alt="Card Image">
+                    <h3>RADHA DEVI</h3>
+                </div>
+                <button class="about" onclick="on(3)" >Know more</button>        
+        </div>
+        <!-- Card 4 -->
+        <div class="card">
+                <div class="overlay" id="overlay4" onclick="off()">
+                  <ul>
+                      <li>Name:</li>
+                      <li>DOB:</li>
+                      <li>Wife Name:</li>
+                  </ul>
+                </div>
+                <div class="overlay-content">
+                    <img src="https://via.placeholder.com/150" alt="Card Image">
+                    <h3>JANKI</h3>
+                </div>
+                <button class="about" onclick="on(4)" >Know more</button>
+        </div>
+        <!-- Card 5 -->
+        <div class="card">
+                    <div class="overlay" id="overlay5" onclick="off()">
+                      <ul>
+                          <li>Name:</li>
+                          <li>DOB:</li>
+                          <li>Wife Name:</li>
+                      </ul>
+                    </div>
+                    <div class="overlay-content">
+                        <img src= "{%static 'family_photos\HSR.jpg'%}" alt="Card Image">
+                        <h3>HARISHANKAR</h3>
+                    </div>
+                    <button class="about" onclick="on(5)" >Know more</button>
+        </div>
+        <!-- Card 6 -->
+        <div class="card">
+                <div class="overlay" id="overlay6" onclick="off()">
+                  <ul>
+                      <li>Name:</li>
+                      <li>DOB:</li>
+                      <li>Wife Name:</li>
+                  </ul>
+                </div>
+                <div class="overlay-content">
+                    <img src= "{%static 'family_photos\nandkishore.jpg'%}" alt="Card Image">
+                    <h3>NANDKISHORE</h3>
+                </div>
+                <button class="about" onclick="on(6)" >Know more</button>
+        </div>
+        <!-- Card 7 -->
+        <div class="card">
+                <div class="overlay" id="overlay7" onclick="off()">
+                  <ul>
+                      <li>Name:</li>
+                      <li>DOB:</li>
+                      <li>Wife Name:</li>
+                  </ul>
+                </div>
+                <div class="overlay-content">
+                    <img src= "{%static 'family_photos\kamla.jpg'%}" alt="Card Image">
+                    <h3>KAMLA</h3>
+                </div>
+                <button class="about" onclick="on(7)" >Know more</button>
+        </div>
+        <!-- Card 8 -->
+        <div class="card">
+            <div class="overlay" id="overlay8" onclick="off()">
+                <ul>
+                    <li>Name:</li>
+                    <li>DOB:</li>
+                    <li>Wife Name:</li>
+                </ul>
+              </div>
+              <div class="overlay-content">
+                <img src= "{%static 'family_photos\alr.jpg'%}" alt="Card Image">
+                <h3>AMRITLAL</h3>
+              </div>
+              <button class="about" onclick="on(8)" >Know more</button>
+        </div>
+        <!-- Card 9 -->
+        <div class="card">
+            <div class="overlay" id="overlay9" onclick="off()">
+                <ul>
+                    <li>Name:</li>
+                    <li>DOB:</li>
+                    <li>Wife Name:</li>
+                </ul>
+              </div>
+              <div class="overlay-content">
+                <img src= "{%static 'family_photos\GBR.jpg'%}" alt="Card Image">
+                <h3>GANGABISHAN</h3>
+              </div>
+              <button class="about" onclick="on(9)" >Know more</button>
+
+        </div>
+        <!-- Card 10 -->
+        <div class="card">
+            <div class="overlay" id="overlay10" onclick="off()">
+                <ul>
+                    <li>Name:</li>
+                    <li>DOB:</li>
+                    <li>Wife Name:</li>
+                </ul>
+              </div>
+              <div class="overlay-content">
+                <img src= "{%static 'family_photos\devki.jpg'%}" alt="Card Image">
+                <h3>DEVKINAND</h3>
+              </div>
+              <button class="about" onclick="on(10)" >Know more</button>
+
+        </div>
+        <!-- Card 11 -->
+        <div class="card">
+            <div class="overlay" id="overlay11" onclick="off()">
+                <ul>
+                    <li>Name:</li>
+                    <li>DOB:</li>
+                    <li>Wife Name:</li>
+                </ul>
+              </div>
+              <div class="overlay-content">
+                <img src= "{%static 'family_photos\kedarnath.jpg'%}" alt="Card Image">
+                <h3>KEDARNATH</h3>
+              </div>
+              <button class="about" onclick="on(11)" >Know more</button>
+
+        </div>
+      </div>
+
+    <footer>
+        <div class="footer">
+           <img class="logo" src= "{%static 'family_photos\LOGO.png'%}" alt=""> 
+            <div class="creator">
+                <h2>Amogh Rathi</h2>
+                <a href="https://www.linkedin.com/in/amogh-rathi-4538721ba/" target="_blank">
+                    <img class="linkedin-logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/LinkedIn_logo_initials.png/600px-LinkedIn_logo_initials.png" alt="LinkedIn Logo">
+                </a>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="{% static 'js/script.js' %}"></script>
+</body>
+</html>
